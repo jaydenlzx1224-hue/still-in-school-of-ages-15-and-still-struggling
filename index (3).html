@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Still in School at 15, Still Struggling</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Source+Serif+4:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<header class="hero"><div class="wrap">
+  <h1>Still in school at 15, still struggling</h1>
+  <p class="lead">Imagine 100 Malaysian teenagers. All of them go to school. Tap a subject to see how many are missing the basics.</p>
+  <div class="tabs" id="dotTabs" role="group" aria-label="Choose a group">
+    <button data-n="46" data-t="of 100 students are below the science baseline" data-s="PISA 2025 country note, all students" aria-pressed="true">Science</button>
+    <button data-n="63" data-t="of 100 boys are below the maths baseline" data-s="PISA 2022, boys" aria-pressed="false">Maths (boys)</button>
+    <button data-n="56" data-t="of 100 girls are below the maths baseline (about)" data-s="PISA 2022, girls, 55.5%" aria-pressed="false">Maths (girls)</button>
+    <button data-n="66" data-t="of 100 boys are below the reading baseline" data-s="PISA 2022, boys" aria-pressed="false">Reading (boys)</button>
+  </div>
+  <div class="stage">
+    <div class="grid" id="grid" role="img" aria-label="100 dots, the red ones are students below baseline"></div>
+    <div class="readout"><div class="big" id="big">46</div><p id="cap">of 100 students are below the science baseline</p><p class="muted small" id="src">PISA 2025 country note, all students</p>
+    <p class="legend2"><i class="dot red"></i>Below Level 2 <i class="dot blue"></i>Level 2 or above</p></div>
+  </div>
+</div></header>
+
+<section><div class="wrap">
+  <h2>Scores are falling</h2>
+  <p>PISA tests 15-year-olds. Malaysia’s scores dropped in all three subjects between 2018 and 2022, and now sit below the OECD average (the black line).</p>
+  <div class="bars">
+    <div><div class="bar-label"><span>Reading</span><span>415 → 388</span></div><div class="track"><div class="fill f18" data-w="69"></div><div class="fill f22" data-w="64.7"></div><div class="oecd" style="left:79.3%"></div></div></div>
+    <div><div class="bar-label"><span>Mathematics</span><span>440 → 409</span></div><div class="track"><div class="fill f18" data-w="73.3"></div><div class="fill f22" data-w="68.2"></div><div class="oecd" style="left:78.7%"></div></div></div>
+    <div><div class="bar-label"><span>Science</span><span>438 → 416</span></div><div class="track"><div class="fill f18" data-w="73"></div><div class="fill f22" data-w="69.3"></div><div class="oecd" style="left:80.8%"></div></div></div>
+    <div class="legend"><span><i style="background:var(--line)"></i>2018</span><span><i style="background:var(--red)"></i>2022</span><span><i style="background:var(--ink);width:3px"></i>OECD average 2022</span></div>
+  </div>
+  <h3 class="sub">Years of learning lost (maths)</h3>
+  <div class="years" aria-label="About 1.6 years of learning lost in maths"><span class="yr full">📚</span><span class="yr part">📚</span><span class="yr off">📚</span><span class="yr off">📚</span><span class="yr off">📚</span></div>
+  <p class="muted small">About 1.6 years in maths, 1.4 in reading and 1.1 in science (ISIS Malaysia estimate).</p>
+</div></section>
+
+<section><div class="wrap">
+  <h2>Why it happens</h2>
+  <p class="muted">Tap a card to open the full story.</p>
+  <div class="cards" id="causes"></div>
+</div></section>
+
+<section><div class="wrap">
+  <h2>What can change it</h2>
+  <p class="muted">Tap a card to see how it works.</p>
+  <div class="cards sol" id="solutions"></div>
+</div></section>
+
+<section><div class="wrap">
+  <h2>Test yourself</h2>
+  <div class="quiz" id="quiz"></div>
+</div></section>
+
+<section><div class="wrap">
+  <p class="quote">SDG 4 asks for relevant learning outcomes, not just attendance.</p>
+  <p class="muted">Target 4.1 promises that every child who finishes school has actually learned. The data says that promise is not yet kept.</p>
+</div></section>
+</main>
+<div class="screen" id="screen" role="dialog" aria-modal="true" aria-labelledby="sTitle" hidden><div class="sbox"><button class="back" id="back">← Back to the website</button><div id="sBody"></div></div></div>
+<footer><div class="wrap"><p>Sources: OECD PISA 2022 and 2025 country notes for Malaysia; ISIS Malaysia, <em>Understanding Malaysia’s decline in PISA scores</em>; The Star and Newswav on PISA 2022. PISA tests 15-year-olds. Verify the latest figures on the <a href="https://www.oecd.org/en/about/programmes/pisa.html">OECD PISA site</a> before citing.</p></div></footer>
+<script src="script.js"></script>
+</body>
+</html>
